@@ -1,0 +1,28 @@
+<!--<editor-fold desc="Description">-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task1</title>
+    <script>
+        function addFloatNumber(a, b) {
+            var numberA = +a;
+            var numberB = +b;
+            var c = parseFloat((numberA + numberB).toFixed(1));
+            alert("Результат: " + "\n" + "\n" + c);
+        }
+    </script>
+</head>
+<body>
+
+<form style="border:1px #cccccc  solid; width:150px;padding: 0px 0px 5px 5px ">
+    <br> <b>Первое число:</b></br>
+    <input id="a" type="text" value="0.1"><br>
+    <br> <b>Второе число:</b></br>
+    <input id="b" type="text" value="0.2"><br>
+    <br><input type="button" value="Сложить"
+               onclick="addFloatNumber(document.getElementById('a').value,document.getElementById('b').value);"></br>
+</form>
+</body>
+</html>
+<!--</editor-fold>-->
